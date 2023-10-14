@@ -39,7 +39,7 @@ export default function Home() {
         {/* Using the Next.js Image component to efficiently load and display an image with specified dimension */}
         <Image className="logo" src="/technology.png" alt="logo" width="220" height="160" />
         {/* Displaying the title of the app */}
-        <h1 className="title">AI-InterviewTech</h1>
+        <h1 className="title">InterviewGPT</h1>
         {/* A brief description about the app's purpose */}
         <p>This is an interface to talk to the senior software engineer for interview preparation!</p>
       </div>
