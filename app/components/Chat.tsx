@@ -103,7 +103,7 @@ const Chat: React.FC<ChatProps>  = ({ initialInput }) => {
             ? messages.map(m => (
                 <div key={m.id} className="chat-line">
                   {/* Display the role of the sender (user or Senior-SoftwareEngineer). The role's text color is determined by the userColors object based on the role */}
-                  <span style={{color: userColors[m.role]}}>{m.role === 'user' ? 'User: ' : '⚡️Senior-SoftwareEngineer: '}</span>
+                  <span style={{color: userColors[m.role]}}>{m.role === 'user' ? '👨‍💻Student: ' : '🧑‍🏫Tech-Interviewer: '}</span>
                   {/* Convert markdown content of the message to displayable HTML */}
                   <ReactMarkdown>{m.content}</ReactMarkdown>
                 </div>
@@ -131,10 +131,12 @@ const Chat: React.FC<ChatProps>  = ({ initialInput }) => {
     <>
       {renderResponse()}
       <form onSubmit={handleChatSubmit} className="mainForm">
-        <input name="input-field" placeholder="Say anything" onChange={handleInputChange} value={input} />
-        <button type="submit" className="mainButton" disabled={loading}>
-          TEXT
-        </button>
+        <div className="form-and-button-container">
+          <input name="input-field" placeholder="Say anything" onChange={handleInputChange} value={input} />
+          <button type="submit" className="mainButton" disabled={loading}>
+            ➤
+          </button>
+        </div>
       </form>
     </>
   );

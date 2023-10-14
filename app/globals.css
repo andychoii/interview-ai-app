@@ -54,22 +54,27 @@ h1 {
   outline: none;
 }
 
+.form-and-button-container {
+  display: flex;
+  align-items: center;
+}
+
 .mainButton {
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 1rem;
-  border: 1px solid #e02aff;
+  border: 1px solid white;
   outline: none;
-  background-color: #e02aff;
-  color: white;
+  background-color: white;
+  color: black;
   font-weight: 900;
-  margin-left: 10px;
+  margin-left: 10px; /* Optional: added for spacing between the input and button */
   cursor: pointer;
   text-transform: uppercase;
 }
 
 .mainButton:hover {
-  background-color: #8f14d2;
+  background-color: rgb(21, 21, 187);
 }
 
 .secondaryButton {
@@ -124,7 +129,7 @@ button:disabled:hover {
 }
 
 .title {
-  margin-top: -6%;
+  margin-top: -3%;
 
 }
 
@@ -136,10 +141,17 @@ button:disabled:hover {
   margin-top: 20px;
 }
 
+
 .startChatBox {
   display: flex;
   justify-content: center;
   margin-bottom: 2px;
+  color: white;
+}
+
+.startChatBox button:hover {
+  background-color: rgb(21, 21, 187);
+  cursor: grab;
 }
 
 .position, .company {
@@ -150,7 +162,7 @@ button:disabled:hover {
 
 .logo {
   filter: brightness(100); /* Converts image to sepia tones */
-  
+  position: relative;
 }
 
 .response {
@@ -177,8 +189,21 @@ button:disabled:hover {
   font-weight: 800;
 }
 
+.welcomeText {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;  /* To give some spacing between the two lines */
+}
+
+.descriptionText {
+  font-size: 15px;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 600px) {
   .mainForm input {
-    width: auto;
+    width: 80%;
   }
 }

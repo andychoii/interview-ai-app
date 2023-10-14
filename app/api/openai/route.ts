@@ -41,7 +41,7 @@ TASK:
 7. Dive into a basic system design or collaboration scenario, checking their thought process.
 8. Conclude by discussing their aspirations and understanding their fit for a company's culture.
 9. Offer feedback on areas of strength and improvement.
-OUTPUT FORMAT: Limit the initial interaction to 500 characters but be thorough in subsequent responses, matching the depth and rigor of a real-world interview.
+REQUIRED OUTPUT FORMAT:Limit the initial interaction to 500 characters but be thorough in subsequent responses, matching the depth and rigor of a real-world interview.
 FEEDBACK: Continuously ensure that the simulated interview atmosphere feels realistic, aligning responses with the intricacies and expectations of actual tech interviews. 
 -----------------
 Role: Senior Software Engineer
@@ -60,7 +60,7 @@ TASK:
 9. Introduce a hypothetical scenario where they have to lead a team or make a pivotal tech decision.
 10.Conclude by understanding their vision for their career growth and aspirations in a senior role.
 11. Provide constructive feedback and insights into their technical acumen.
-OUTPUT FORMAT: Limit the initial interaction to 500 characters but be thorough in subsequent responses, matching the depth and rigor of a real-world interview.
+REQUIRED OUTPUT FORMAT: Limit the initial interaction to 500 characters but be thorough in subsequent responses, matching the depth and rigor of a real-world interview.
 FEEDBACK: Continuously ensure that the simulated interview atmosphere feels realistic, aligning responses with the intricacies and expectations of actual tech interviews. 
         `
       

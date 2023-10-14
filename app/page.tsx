@@ -37,11 +37,14 @@ export default function Home() {
       {/* Section for logo and title */}
       <div className="logoTitleBox">
         {/* Using the Next.js Image component to efficiently load and display an image with specified dimension */}
-        <Image className="logo" src="/technology.png" alt="logo" width="220" height="160" />
+        <Image className="logo" src="/Necktie.png" alt="logo" width="220" height="160" />
         {/* Displaying the title of the app */}
         <h1 className="title">InterviewGPT</h1>
         {/* A brief description about the app's purpose */}
-        <p>This is an interface to talk to the senior software engineer for interview preparation!</p>
+        <p className="welcomeText">🌟 Your One-Stop Destination for Interview Mastery! 🌟</p>
+        <p className="descriptionText">
+        Welcome to your interview prep journey! Dive in, boost your skills, and face interviews with confidence. We are with you every step.
+</p>
       </div>
       
       {/* Using conditional rendering based on the state of chatStarted */}
@@ -58,7 +61,7 @@ export default function Home() {
   
           {/* Button that user clicks to start the chat */}
           <div className="startChatBox">
-            <button type="submit">Start Chat</button>
+            <button className="startTheChatBox" type="submit">Start Chat</button>
           </div>
         </form>
       ) : (
